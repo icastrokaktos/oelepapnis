@@ -23,7 +23,7 @@ class CategoriasController extends Controller
      */
     public function create()
     {
-        //
+        return view('Categorias.gestion');
     }
 
     /**
@@ -32,9 +32,9 @@ class CategoriasController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+        return 'hola';
     }
 
     /**

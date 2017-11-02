@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('Categorias', 'CategoriasController@Nueva');
+Route::get('Categorias', 'CategoriasController@create');
+Route::post('CategoriasGuardar', 'CategoriasController@store');
 
 Route::get('DatosLaborales', 'DatosLaborales@Nueva');
 

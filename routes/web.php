@@ -15,6 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('Categorias', 'CategoriasController@Nueva');
+
+Route::get('DatosLaborales', 'DatosLaborales@Nueva');
+
+Route::get('DocumentosAsociados', 'DocumentosAsociadosController@Nueva');
+
+Route::get('Documentos', 'DocumentosController@Nueva');
+
+Route::get('Empresas', 'EmpresasController@Nueva');
+
+Route::get('Trabajador', 'TrabajadorController@Nueva');
+
+
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {
 //        // Uses Auth Middleware
